@@ -1,3 +1,6 @@
+import lombok.Getter; 
+
+@Getter
 public class Heroina {
     private String nome;
     private int mascaras;
@@ -8,19 +11,7 @@ public class Heroina {
         this.mascaras = 5;
         this.seda = 0;
 
-    }
-    public String getNome() {
-    return nome;
-    }
-    public int getMascaras() {
-    return mascaras;
-    }
-        public int getSeda() {
-    return seda;
-    }
-    @Override
-    public String toString() {
-        return nome + " | Mascaras: " + mascaras + "/5 | Seda : " + seda + "/9";
+    
     }
 
     public void atacar() {
@@ -48,5 +39,9 @@ public class Heroina {
 
     public boolean estaDerrotado() {
         return this.mascaras == 0;
-    } 
+    }
+    @Override
+    public String toString() {
+        return nome + " | Mascaras: " + mascaras + "/5 | Seda : " + seda + "/9"; 
+    }
 }
