@@ -8,7 +8,7 @@ public class TesteInimigo {
         System.out.println(besouro);
         System.out.println(bugado);
 
-        while (!besouro.estaDerrotado()) {
+        while (!besouro.foiDerrotado()) {
             besouro.receberGolpe();
         }
 
